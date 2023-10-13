@@ -1,0 +1,57 @@
+
+:root{
+
+--clr-bg-primary: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+--clr-white: hsl(0, 0%, 100%)
+
+### Neutral
+
+--clr-neutral-200: hsl(0, 0%, 81%)
+--clr-neutral-100: hsl(210, 46%, 95%)
+    --fw-100: 500;
+    --fw-200: 600;
+
+    --ff::
+    --fs-body:;
+    --fs-h2:;
+    --fs-txt-secondary:;
+}
+
+*,
+*:before,
+*:after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font:inherit;
+}
+
+html{
+    font-size:62.5%;
+}
+ body{
+    min-width:100vh;
+    text-rendering:optimizedSpeed;
+ }
+img,
+picture{
+    max-width:100%;
+    border-radius:50%;
+    display:block;
+}
+
+/******************************************************/
+
+h1{
+    visibility:hidden;
+}
+
+
+.testimonial-card{
+    border:1px solid red;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
