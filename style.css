@@ -1,19 +1,19 @@
 
 :root{
 
---clr-bg-primary: hsl(263, 55%, 52%)
-Very dark grayish blue: hsl(217, 19%, 35%)
-Very dark blackish blue: hsl(219, 29%, 14%)
---clr-white: hsl(0, 0%, 100%)
+--clr-bg-primary: hsl(263, 55%, 52%);
+--clr-bg-secondary-700: hsl(217, 19%, 35%);
+--clr-bg-secondary-800: hsl(219, 29%, 14%);
+--clr-neutral-100: hsl(0, 0%, 100%);
 
 ### Neutral
 
---clr-neutral-200: hsl(0, 0%, 81%)
---clr-neutral-100: hsl(210, 46%, 95%)
+--clr-neutral-300: hsl(0, 0%, 81%)
+--clr-neutral-200: hsl(210, 46%, 95%)
     --fw-100: 500;
     --fw-200: 600;
 
-    --ff::
+    --ff-primary:'Barlow Semi Condensed', sans-serif;:
     --fs-body:;
     --fs-h2:;
     --fs-txt-secondary:;
@@ -34,6 +34,7 @@ html{
  body{
     min-width:100vh;
     text-rendering:optimizedSpeed;
+    font-family:var(--ff-primary)
  }
 img,
 picture{
@@ -44,14 +45,77 @@ picture{
 
 /******************************************************/
 
+
+
+
+
+
+
+/****** utility **********/
+
+
+
+.txt-cap{
+    text-transform:capitalize;
+}
+.bg-white{
+    background-color:var(--clr-neural-100);
+}
+.bg-primary{
+    background-color:var(--clr-bg-primary);
+}
+.bg-sec-800{
+ 
+    background-color:var(--clr-bg-secondary-800);
+    
+}
+.bg-sec-700{
+    background-color:var(--clr-bg-secondary-700);
+
+}
+
+
+
+
+/****** typograpgy ********/
+
 h1{
     visibility:hidden;
 }
 
-
-.testimonial-card{
-    border:1px solid red;
+.name{
+    font-wight:var(--fw-200);
+    font-size:1.6rem;
 }
 
+.position{
+    font-size:1.2rem;
+
+}
+
+
+.testimonial-card > p:first-of-type {
+    font-size:2rem;
+}
+
+.testimonial-card > p:last-of-type {
+    font-size:1.6rem;
+}
+
+/*********************************************/
+.testimonial-card{
+    border:1px solid red;
+    max-width:32rem;
+    border-radius:0.8rem;
+    padding:2rem 2rem;
+}
+.testimonial-card img{
+    width:5rem;
+}
+.flex{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
